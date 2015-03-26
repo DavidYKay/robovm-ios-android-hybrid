@@ -2,11 +2,7 @@ package se.tap2.testrobovm;
 
 import org.robovm.apple.foundation.NSAutoreleasePool;
 import org.robovm.apple.foundation.NSDictionary;
-import org.robovm.apple.uikit.UIApplication;
-import org.robovm.apple.uikit.UIApplicationDelegateAdapter;
-import org.robovm.apple.uikit.UIScreen;
-import org.robovm.apple.uikit.UIViewController;
-import org.robovm.apple.uikit.UIWindow;
+import org.robovm.apple.uikit.*;
 
 
 public class MyIpResolverApplication extends UIApplicationDelegateAdapter {
@@ -17,7 +13,7 @@ public class MyIpResolverApplication extends UIApplicationDelegateAdapter {
 
     @Override
     public boolean didFinishLaunching(UIApplication application,
-            NSDictionary launchOptions) {
+                                      UIApplicationLaunchOptions launchOptions) {
   
         window = new UIWindow(UIScreen.getMainScreen().getBounds());
 
